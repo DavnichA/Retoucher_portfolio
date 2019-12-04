@@ -1,0 +1,1 @@
+function loadData(){return new Promise((e,t)=>{setTimeout(e,1e3)})}loadData().then(()=>{let e=document.getElementById("wrapPreloared");e.classList.add("hidden"),e.classList.add("visible")}),document.querySelector(".portfolio").onclick=(()=>{document.querySelector(".wrapSlideshow").classList.add("wrapSlideshow_off"),document.querySelector("header").classList.add("active")});

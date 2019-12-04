@@ -1,0 +1,14 @@
+@import "normalize", "preloader", "home";
+@import url(https://fonts.googleapis.com/css?family=Roboto|Solway&display=swap);
+
+
+header {
+	display: none;
+	z-index: -9999;
+	width: 100vw;
+	height: 100vh;
+	background-color: red;
+}
+.active {
+	display: block;
+}
