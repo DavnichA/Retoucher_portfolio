@@ -6,6 +6,8 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url(https://fonts.googleapis.com/css?family=Roboto|Solway&display=swap);
+@import url("https://fonts.googleapis.com/css?family=Nixie+One");
+@import url("https://fonts.googleapis.com/css?family=League+Script");
 html {
   line-height: 1.15;
   /* 1 */
@@ -472,7 +474,8 @@ svg {
   background-color: #fff;
   font-family: "Roboto", sans-serif;
   border-style: none;
-  cursor: pointer; }
+  cursor: pointer;
+  outline: none; }
 
 .contact:hover, .portfolio:hover {
   background-color: #dfe6e9; }
@@ -499,12 +502,85 @@ svg {
 .social:hover > a:hover {
   opacity: 1; }
 
-header {
+.wrap-main-page {
   display: none;
   z-index: -9999;
   width: 100vw;
   height: 100vh;
-  background-color: red; }
+  background-color: #000; }
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 11vh; }
 
 .active {
   display: block; }
+
+/* neon logo */
+.logo {
+  margin-left: 3vw;
+  cursor: pointer; }
+
+.neon {
+  font-size: 50px; }
+
+#fade {
+  opacity: .8;
+  color: #ebffff;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3), 0 0px 15px #fff, 0 0 10px #38eeff, 0 0 50px #38eeff;
+  animation: fade 3s infinite alternate; }
+
+#surname-neon {
+  animation: blink 0.01s infinite alternate; }
+
+.neon {
+  color: #ebffff;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3), 0 0px 15px #fff, 0 0 10px #38eeff, 0 0 50px #38eeff;
+  font-family: 'Nixie One', Helvetica, Arial, sans-serif; }
+
+.neon-purple {
+  font-family: 'League Script', Helvetica, Arial, sans-serif;
+  color: #ccf;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5), 0 0 20px #fff, 0 0 10px #7d26cd, 0 0 50px #7d26cd; }
+
+@keyframes fade {
+  40% {
+    opacity: .8; }
+  42% {
+    opacity: .1; }
+  43% {
+    opacity: .8; }
+  45% {
+    opacity: .1; }
+  46% {
+    opacity: .8; } }
+
+@keyframes blink {
+  70% {
+    opacity: .7; } }
+
+/* menu */
+.menu {
+  color: #fff;
+  width: 40vw;
+  margin-right: 3vw; }
+
+.menu > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between; }
+
+.menu > ul > li {
+  font-family: 'Nixie One', Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  list-style-type: none;
+  cursor: pointer; }
+
+.menu > ul > li:hover {
+  color: #ebffff;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3), 0 0px 15px #fff, 0 0 10px #38eeff, 0 0 50px #38eeff; }
