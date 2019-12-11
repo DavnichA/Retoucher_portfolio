@@ -9,6 +9,7 @@ $solway: 'Solway', serif;
 	top: 0;
 	left: 0;
 	z-index: -999;
+	display: none;
 }
 .wrapSlideshow_off{
 	display: none;
@@ -107,7 +108,7 @@ $solway: 'Solway', serif;
 .buttons {
 	margin: 8vh 0 0 3vw;
 }
-.contact, .portfolio {
+.btn_contact, .btn_portfolio {
 	padding: 10px 24px;
 	border-radius: 25px;
 	text-transform: uppercase;
@@ -117,11 +118,11 @@ $solway: 'Solway', serif;
 	cursor: pointer;
 	outline: none;
 }
-.contact:hover, .portfolio:hover {
+.btn_contact:hover, .btn_portfolio:hover {
 	background-color: #dfe6e9;
 }
 
-.portfolio  {
+.btn_portfolio  {
 	margin-left: 2vw;
 }
 

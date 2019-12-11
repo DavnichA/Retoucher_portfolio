@@ -58,7 +58,8 @@ function watching() { /* Отслеживать  и выход control+c */
         server: {
             baseDir: "./"
         },
-        // tunnel: true,
+        // port: 3000,
+        // tunnel: "my-private-site",
         notify: false
     });
 
